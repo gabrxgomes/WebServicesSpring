@@ -32,5 +32,5 @@ public class TestConfig implements CommandLineRunner {
 	//agora instanciamos um obj para ser mapeado no banco de dados
 
 }
-//essa classe serve para gente popular nosso banco de dados, que é o seeding database
+//essa classe serve para gente popular nosso banco de dados, que é o seeding database é um teste de envio de informações pro nosso bd local
 //todo framework tem um mecanismo de injeção de dependecia implicito, ele é automatico
