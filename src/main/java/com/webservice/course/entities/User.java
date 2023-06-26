@@ -5,6 +5,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -29,6 +31,8 @@ public class User implements Serializable {
 	private String phone;
 	private String password;
 	
+	
+	@JsonIgnore //impede a chmada de mao dupla das classes por cada uma referencia a outra
 	@OneToMany(mappedBy = "client")
 	private List<Order> orders = new ArrayList<>();
 	
